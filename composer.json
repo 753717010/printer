@@ -1,0 +1,20 @@
+{
+    "name": "sakura/printer",
+    "description": "This is a package that integrates a partial printer",
+    "type": "library",
+    "authors": [
+        {
+            "name": "风哀伤",
+            "email": "753717010@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sakura\\Printer\\": "lib/"
+        }
+    }
+}
