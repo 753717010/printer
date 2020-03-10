@@ -1,6 +1,6 @@
 <?php
 
-namespace sakura\sdk;
+namespace chengjien\sdk;
 
 
 class FeieYun

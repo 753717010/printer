@@ -1,9 +1,9 @@
 <?php
 
-namespace sakura\Printer\Printer;
+namespace chengjien\Printer\Printer;
 
-use sakura\Exceptions\PrintException;
-use sakura\Printer\Config\BaseConfig;
+use chengjien\Exceptions\PrintException;
+use chengjien\Printer\Config\BaseConfig;
 
 /**
  * Class BasePrinter
@@ -15,15 +15,18 @@ abstract class BasePrinter
     protected $config;
 
     /**
-     * @param $data
+     * @param string $data 打印内容
+     * @param boolean $type 是否处理数据
      * @return mixed
      * @throws PrintException
      * 使用打印机打印
      */
-    public function print($data)
+    public function print($data, $type = false)
     {
-        $content = $this->handle($data);
-        return $this->config->print($content);
+        if ($type) {
+            $data = $this->handle($data);
+        }
+        return $this->config->print($data);
     }
 
     /**

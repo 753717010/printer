@@ -8,11 +8,11 @@
  * @link: http://www.zjhejiang.com
  */
 
-namespace sakura\Printer\Config;
+namespace chengjien\Printer\Config;
 
 
-use sakura\Exceptions\PrintException;
-use sakura\sdk\FeieYun;
+use chengjien\Exceptions\PrintException;
+use chengjien\sdk\FeieYun;
 
 class FeieConfig extends BaseConfig
 {
