@@ -1,9 +1,9 @@
 <?php
 
-namespace sakura\Printer\Printer;
+namespace Chengjien\Printer\Printer;
 
-use sakura\Exceptions\PrintException;
-use sakura\Printer\Config\BaseConfig;
+use Chengjien\Exceptions\PrintException;
+use Chengjien\Printer\Config\BaseConfig;
 
 /**
  * Class BasePrinter

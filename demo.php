@@ -10,7 +10,7 @@
 require('vendor/autoload.php');
 
 // 使用预设置好的数组参数进行打印
-$printer = new \sakura\Printer\PrinterClass();
+$printer = new \Chengjien\Printer\PrinterClass();
 $printer->setPrinter($printer::FEIE, [
     'sn' => 1,
     'key' => 2,

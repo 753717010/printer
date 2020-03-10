@@ -6,7 +6,7 @@
  * Time: 10:09
  */
 
-namespace sakura\Exceptions;
+namespace Chengjien\Exceptions;
 
 
 class PrintException extends \Exception

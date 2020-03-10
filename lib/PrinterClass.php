@@ -8,7 +8,7 @@
  * @link: http://www.zjhejiang.com
  */
 
-namespace sakura\Printer;
+namespace Chengjien\Printer;
 
 
 use sakura\Exceptions\PrintException;

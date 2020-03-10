@@ -1,5 +1,5 @@
 {
-    "name": "sakura/printer",
+    "name": "Chengjien/printer",
     "description": "This is a package that integrates a partial printer",
     "type": "library",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "sakura\\Printer\\": "lib/"
+            "Chengjien\\Printer\\": "lib/"
         }
     }
 }
