@@ -8,10 +8,10 @@
  * @link: http://www.zjhejiang.com
  */
 
-namespace sakura\Printer\Printer;
+namespace Chengjien\Printer\Printer;
 
 
-use sakura\Printer\Config\FeieConfig;
+use Chengjien\Printer\Config\FeieConfig;
 
 class FeiePrinter extends BasePrinter
 {

@@ -8,7 +8,7 @@
  * @link: http://www.zjhejiang.com
  */
 
-namespace sakura\Printer\Config;
+namespace Chengjien\Printer\Config;
 
 
 abstract class BaseConfig
