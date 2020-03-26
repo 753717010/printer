@@ -22,7 +22,7 @@ class FeiePrinter extends BasePrinter
 
     public function getCenterBold($content)
     {
-        return "<CB>{$content}</CB><BR>";
+        return "<CB>{$content}</CB>";
     }
 
     public function getBR($content)
@@ -32,11 +32,11 @@ class FeiePrinter extends BasePrinter
 
     public function getB($content)
     {
-        return "<B>{$content}</B><BR>";
+        return "<B>{$content}</B>";
     }
 
     public function getDB($content)
     {
-        return "<DB>{$content}</DB><BR>";
+        return "<DB>{$content}</DB>";
     }
 }

@@ -17,7 +17,7 @@ use chengjien\Printer\Printer\FeiePrinter;
 
 /**
  * Class PrinterClass
- * @package sakura\Printer
+ * @package chengjien\Printer
  * @property BasePrinter $printer
  */
 class PrinterClass

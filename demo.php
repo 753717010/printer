@@ -20,8 +20,15 @@ $printer->setPrinter($printer::FEIE, [
 ]);
 $printer->print([
     [
-        'handle' => 'centerBold',
         'content' => '测试打印',
+        'handleList' => [
+            [
+                'handle' => 'centerBold',
+            ],
+            [
+                'handle' => 'db',
+            ],
+        ]
     ]
 ], true);
 

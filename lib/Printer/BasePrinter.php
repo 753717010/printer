@@ -26,6 +26,8 @@ abstract class BasePrinter
         if ($type) {
             $data = $this->handle($data);
         }
+        var_dump($data);
+        exit();
         return $this->config->print($data);
     }
 
@@ -41,13 +43,25 @@ abstract class BasePrinter
             if (isset($item['show']) && $item['show'] == 0) {
                 continue;
             }
-            $getter = $item['handle'];
             $value = $item['content'];
-            if (isset($item['children'])) {
-                $value .= $this->handle($item['children']);
+            if (isset($item['handleList'])) {
+                foreach ($item['handleList'] as $handle) {
+                    $getter = $handle['handle'];
+                    $value = $this->$getter($value);
+                }
             }
-            $content .= method_exists($this, $getter) ? $this->$getter($value) : $value;
+            $content .= $value;
         }
         return $content;
+    }
+
+    public function __call($method, $array)
+    {
+        $getter = 'get' . $method;
+        if (method_exists($this, $getter)) {
+            return $this->$getter($array[0]);
+        } else {
+            return $array;
+        }
     }
 }
