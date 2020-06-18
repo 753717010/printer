@@ -26,8 +26,6 @@ abstract class BasePrinter
         if ($type) {
             $data = $this->handle($data);
         }
-        var_dump($data);
-        exit();
         return $this->config->print($data);
     }
 

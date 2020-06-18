@@ -20,7 +20,7 @@ $printer->setPrinter($printer::FEIE, [
 ]);
 $printer->print([
     [
-        'content' => '测试打印',
+        'content' => '测试打印---预设值',
         'handleList' => [
             [
                 'handle' => 'centerBold',
@@ -33,4 +33,4 @@ $printer->print([
 ], true);
 
 // 使用自定义样式进行打印
-$printer->print("<CB>测试打印</CB><BR>", false);
+$printer->print("<CB>测试打印--自定义</CB><BR>", false);
